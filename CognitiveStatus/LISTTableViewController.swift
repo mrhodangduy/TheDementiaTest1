@@ -16,20 +16,14 @@ class LISTTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "LIST"
-        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "bg_main"))
-        self.tableView.separatorStyle = .none
+        self.tableView.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
         listUsers = fetchDataFromCoreData()
         tableView.reloadData()
-        
-        for user in listUsers
-        {
-            print(user)
-        }
-
+  
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +66,7 @@ class LISTTableViewController: UITableViewController {
         
     }
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: false)
         
     }

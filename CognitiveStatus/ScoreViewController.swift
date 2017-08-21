@@ -90,6 +90,12 @@ class ScoreViewController: UIViewController {
         
         saveToCoreData(name: name!, isPersonAlert: personAlert!, dateOfBirth: dateOfBirth!, eduacation: education!, sex: sex!, ethnicity: ethinicity!, age: age!, work: work!, score: totalScore)
         
+        standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        standard.synchronize()
+        
+        performSegue(withIdentifier: "HomeSegue", sender: nil)
+        
+        
     }
     @IBAction func EmailData(_ sender: UIButton) {
         
@@ -121,20 +127,20 @@ class ScoreViewController: UIViewController {
 //            print("Could not open mail compose. Plese check your mail configure")
 //        }
         
-        let vc = UIActivityViewController(activityItems: [name!,work!], applicationActivities: [])
+        let vc = UIActivityViewController(activityItems: [name!,work!,dateOfBirth!,personAlert!], applicationActivities: [])
         present(vc, animated: true, completion: nil)
         
     }
     
     
 }
-
-extension ScoreViewController: MFMailComposeViewControllerDelegate
-{
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        self.dismiss(animated: true, completion: nil)
-    }
-}
+//
+//extension ScoreViewController: MFMailComposeViewControllerDelegate
+//{
+//    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+//        self.dismiss(animated: true, completion: nil)
+//    }
+//}
 
 
 

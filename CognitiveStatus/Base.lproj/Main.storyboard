@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KHw-P2-dou">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KHw-P2-dou">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -53,9 +53,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="425"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x8M-A9-J3n">
-                                        <rect key="frame" x="15" y="20" width="260" height="390"/>
+                                        <rect key="frame" x="15" y="15" width="260" height="395"/>
                                         <string key="text">W. Steven Saunders, Psy.D. is a Licensed Psychologist, Associate Lecturer at the University of Central Florida, and Neuropsychologist for Central Florida Health Alliance in Lake County, Florida where he maintains a private practice.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -67,7 +67,7 @@
                                     <constraint firstItem="x8M-A9-J3n" firstAttribute="leading" secondItem="4J5-1p-rbg" secondAttribute="leading" constant="15" id="eFP-aw-rGw"/>
                                     <constraint firstItem="2i5-fp-8pT" firstAttribute="leading" secondItem="4J5-1p-rbg" secondAttribute="leading" id="hEY-UW-mSX"/>
                                     <constraint firstAttribute="bottom" secondItem="2i5-fp-8pT" secondAttribute="bottom" id="j9o-7X-8lo"/>
-                                    <constraint firstItem="x8M-A9-J3n" firstAttribute="top" secondItem="4J5-1p-rbg" secondAttribute="top" constant="20" id="l2y-Yf-Cjy"/>
+                                    <constraint firstItem="x8M-A9-J3n" firstAttribute="top" secondItem="4J5-1p-rbg" secondAttribute="top" constant="15" id="l2y-Yf-Cjy"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -109,10 +109,10 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_transfer" translatesAutoresizingMaskIntoConstraints="NO" id="J0y-XS-ate">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="425"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IvJ-Z3-7W5">
-                                        <rect key="frame" x="15" y="20" width="260" height="390"/>
-                                        <mutableString key="text">About This Tool: This is a screening instrument based upon current psychology and neuroscience research as well as the extensive clinical experience of the author. A pilot study (Saunders, W. S. (2010). The Consice Cognitive Status Examination: Mental Status Examination with a Smart-Phone Application. The Florida Psychologist Vol. 60, No. 3, pp. 15-22) was conducted to determine the reliabilty and validity of this tool.   This tool demonstrated reliability and validity when compared to other mental status examination screening instruments that measure broad cognitive abilities. This tool is meant as a beginning screening test to start a conversation with your loved ones. Give the test with an attitude of compassion and love. You will get better results that way. You should consider consulting an experienced professional in conjunction with a physical examination, a biopsychosocial history, and other psychological, cognitive, and neuropsychological testing for the most accurate diagnosis. This screening instrument should never be relied upon as the sole basis for making any determination about a person. This screening instrument should be used as a general guide for helping to make a competent clinical judgment within the context of a full Neuropsychogical examination.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvJ-Z3-7W5">
+                                        <rect key="frame" x="15" y="15" width="260" height="395"/>
+                                        <string key="text">About This Tool: This is a screening instrument based upon current psychology and neuroscience research as well as the extensive clinical experience of the author. A pilot study (Saunders, W. S. (2010). The Consice Cognitive Status Examination: Mental Status Examination with a Smart-Phone Application. The Florida Psychologist Vol. 60, No. 3, pp. 15-22) was conducted to determine the reliabilty and validity of this tool.   This tool demonstrated reliability and validity when compared to other mental status examination screening instruments that measure broad cognitive abilities. This tool is meant as a beginning screening test to start a conversation with your loved ones. Give the test with an attitude of compassion and love. You will get better results that way. You should consider consulting an experienced professional in conjunction with a physical examination, a biopsychosocial history, and other psychological, cognitive, and neuropsychological testing for the most accurate diagnosis. This screening instrument should never be relied upon as the sole basis for making any determination about a person. This screening instrument should be used as a general guide for helping to make a competent clinical judgment within the context of a full Neuropsychogical examination.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -120,7 +120,7 @@
                                     <constraint firstItem="IvJ-Z3-7W5" firstAttribute="leading" secondItem="pqn-EM-8Mg" secondAttribute="leading" constant="15" id="7IX-8P-dQs"/>
                                     <constraint firstAttribute="trailing" secondItem="J0y-XS-ate" secondAttribute="trailing" id="7x2-WL-RFQ"/>
                                     <constraint firstItem="J0y-XS-ate" firstAttribute="top" secondItem="pqn-EM-8Mg" secondAttribute="top" id="H97-Ci-feq"/>
-                                    <constraint firstItem="IvJ-Z3-7W5" firstAttribute="top" secondItem="pqn-EM-8Mg" secondAttribute="top" constant="20" id="QFb-ZB-tmV"/>
+                                    <constraint firstItem="IvJ-Z3-7W5" firstAttribute="top" secondItem="pqn-EM-8Mg" secondAttribute="top" constant="15" id="QFb-ZB-tmV"/>
                                     <constraint firstAttribute="bottom" secondItem="J0y-XS-ate" secondAttribute="bottom" id="T5n-AK-7Xr"/>
                                     <constraint firstAttribute="bottom" secondItem="IvJ-Z3-7W5" secondAttribute="bottom" constant="15" id="VVf-Kc-Baa"/>
                                     <constraint firstItem="J0y-XS-ate" firstAttribute="leading" secondItem="pqn-EM-8Mg" secondAttribute="leading" id="hgd-9x-Atp"/>
@@ -140,6 +140,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ja2-g2-JGa"/>
+                    <connections>
+                        <outlet property="textView" destination="IvJ-Z3-7W5" id="IAk-UK-jkT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUo-nB-mhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,7 +151,7 @@
         <!--Home View Controller-->
         <scene sceneID="iQ7-xT-9ML">
             <objects>
-                <viewController id="xhE-GG-1CB" customClass="HomeViewController" customModule="TheDementiaTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="xhE-GG-1CB" customClass="HomeViewController" customModule="TheDementiaTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5K0-Ds-ivZ"/>
                         <viewControllerLayoutGuide type="bottom" id="fCo-sN-8EH"/>
@@ -179,7 +182,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of Education:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHl-n4-GXW">
-                                <rect key="frame" x="15" y="238" width="117" height="36"/>
+                                <rect key="frame" x="15" y="238" width="115" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -215,7 +218,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="G45-X8-2sa">
-                                <rect key="frame" x="142" y="88" width="160" height="30"/>
+                                <rect key="frame" x="140" y="88" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dvQ-XY-AiL"/>
                                 </constraints>
@@ -230,7 +233,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="uli-mM-2BN">
-                                <rect key="frame" x="142" y="184" width="160" height="30"/>
+                                <rect key="frame" x="140" y="184" width="160" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -245,10 +248,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ePb-gM-mCg">
-                                <rect key="frame" x="142" y="241" width="160" height="30"/>
+                                <rect key="frame" x="140" y="241" width="160" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="EducationTF:" destination="xhE-GG-1CB" eventType="editingDidBegin" id="5vl-Rd-eK2"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="bg_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="hl6-Sh-AsP" userLabel="bgEthinic">
                                 <rect key="frame" x="137" y="346" width="168" height="30"/>
@@ -257,10 +263,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="uGp-20-4M9">
-                                <rect key="frame" x="142" y="346" width="160" height="30"/>
+                                <rect key="frame" x="140" y="346" width="160" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="EthnicityTF:" destination="xhE-GG-1CB" eventType="editingDidBegin" id="qwn-2e-vlG"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="bg_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Z1W-qX-5Xu" userLabel="bgAge">
                                 <rect key="frame" x="136" y="395" width="168" height="30"/>
@@ -269,7 +278,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Dx-MI-nWD">
-                                <rect key="frame" x="142" y="395" width="160" height="30"/>
+                                <rect key="frame" x="140" y="395" width="160" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
@@ -281,10 +290,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="O2p-7s-Ncd">
-                                <rect key="frame" x="142" y="446" width="160" height="30"/>
+                                <rect key="frame" x="140" y="446" width="160" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="WorkTF:" destination="xhE-GG-1CB" eventType="editingDidEnd" id="hVC-3F-rJt"/>
+                                </connections>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VM5-l4-BDx" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
                                 <rect key="frame" x="137" y="136" width="51" height="31"/>
@@ -329,7 +341,6 @@
                             <constraint firstItem="hl6-Sh-AsP" firstAttribute="centerY" secondItem="K35-L7-wOL" secondAttribute="centerY" id="A9S-2S-1MB"/>
                             <constraint firstItem="hl6-Sh-AsP" firstAttribute="height" secondItem="4SZ-a0-ocr" secondAttribute="height" id="AcB-sE-V3a"/>
                             <constraint firstItem="uGp-20-4M9" firstAttribute="trailing" secondItem="ePb-gM-mCg" secondAttribute="trailing" id="Atj-qA-Q3a"/>
-                            <constraint firstAttribute="trailing" secondItem="G45-X8-2sa" secondAttribute="trailing" constant="18" id="C5z-8g-puz"/>
                             <constraint firstItem="7Al-nz-uFG" firstAttribute="trailing" secondItem="Z1W-qX-5Xu" secondAttribute="trailing" id="FFA-mA-RIV"/>
                             <constraint firstItem="WyI-hZ-hOC" firstAttribute="leading" secondItem="0sQ-b0-azs" secondAttribute="leading" constant="15" id="FKp-ZV-blP"/>
                             <constraint firstItem="ePb-gM-mCg" firstAttribute="trailing" secondItem="uli-mM-2BN" secondAttribute="trailing" id="GFx-zG-Bub"/>
@@ -351,7 +362,7 @@
                             <constraint firstItem="ZNQ-9y-jFJ" firstAttribute="centerY" secondItem="Oyr-Qx-qKG" secondAttribute="centerY" id="YnD-SA-7ff"/>
                             <constraint firstItem="qHl-n4-GXW" firstAttribute="top" secondItem="Oyr-Qx-qKG" secondAttribute="bottom" constant="30" id="Z1I-5S-M3k"/>
                             <constraint firstItem="ZT9-8q-Esa" firstAttribute="height" secondItem="G45-X8-2sa" secondAttribute="height" id="ZRa-f4-xHA"/>
-                            <constraint firstAttribute="trailing" secondItem="G45-X8-2sa" secondAttribute="trailing" constant="18" id="akI-nG-6wV"/>
+                            <constraint firstAttribute="trailing" secondItem="G45-X8-2sa" secondAttribute="trailing" constant="20" id="akI-nG-6wV"/>
                             <constraint firstItem="K35-L7-wOL" firstAttribute="leading" secondItem="K6b-cS-x0M" secondAttribute="leading" id="b6z-ob-dSI"/>
                             <constraint firstItem="O2p-7s-Ncd" firstAttribute="height" secondItem="4Dx-MI-nWD" secondAttribute="height" id="bFJ-cl-U9h"/>
                             <constraint firstItem="O2p-7s-Ncd" firstAttribute="width" secondItem="4Dx-MI-nWD" secondAttribute="width" id="bIH-0i-zDs"/>
@@ -489,7 +500,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4E9-3b-iwx" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="256" y="134" width="51" height="31"/>
+                                <rect key="frame" x="246" y="134" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -501,7 +512,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZIT-Mh-232" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="255" y="172" width="51" height="31"/>
+                                <rect key="frame" x="245" y="172" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -513,7 +524,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-Rn-F4U" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="256" y="210" width="51" height="31"/>
+                                <rect key="frame" x="246" y="210" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -525,7 +536,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WjY-aY-eg5" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="256" y="266" width="51" height="31"/>
+                                <rect key="frame" x="246" y="266" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -537,7 +548,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GZf-MN-eHa" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="256" y="87" width="51" height="31"/>
+                                <rect key="frame" x="246" y="87" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941176470589" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -577,7 +588,7 @@
                             <constraint firstItem="4E9-3b-iwx" firstAttribute="centerY" secondItem="Dq1-aD-E9V" secondAttribute="centerY" id="oF6-ys-ylc"/>
                             <constraint firstItem="DeE-Rn-F4U" firstAttribute="trailing" secondItem="ZIT-Mh-232" secondAttribute="trailing" constant="1" id="oPi-zY-tFf"/>
                             <constraint firstItem="q0i-uO-3Pw" firstAttribute="top" secondItem="DEs-V5-FGl" secondAttribute="bottom" constant="20" id="ogX-3z-MP4"/>
-                            <constraint firstAttribute="trailing" secondItem="GZf-MN-eHa" secondAttribute="trailing" constant="15" id="rfg-xm-J2p"/>
+                            <constraint firstAttribute="trailing" secondItem="GZf-MN-eHa" secondAttribute="trailing" constant="25" id="rfg-xm-J2p"/>
                             <constraint firstItem="lnm-f6-40T" firstAttribute="width" secondItem="bCd-0H-yfY" secondAttribute="width" id="yg2-9E-06U"/>
                             <constraint firstItem="Dq1-aD-E9V" firstAttribute="top" secondItem="q0i-uO-3Pw" secondAttribute="bottom" constant="20" id="yx7-VJ-iv8"/>
                         </constraints>
@@ -719,7 +730,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-In-EM7" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="256" y="104.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="104.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -731,7 +742,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6jp-Po-6FH" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="256" y="188" width="51" height="31"/>
+                                <rect key="frame" x="246" y="188" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -743,7 +754,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hxu-p4-vfy" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="58.5" y="336" width="51" height="31"/>
+                                <rect key="frame" x="63.5" y="336" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -755,7 +766,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MMU-Vp-olX" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="59" y="374" width="51" height="31"/>
+                                <rect key="frame" x="64" y="374" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -767,7 +778,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="evA-P4-5YX" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="207.5" y="335.5" width="51" height="31"/>
+                                <rect key="frame" x="212.5" y="335.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -779,7 +790,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LZU-7U-ies" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="208.5" y="373.5" width="51" height="31"/>
+                                <rect key="frame" x="213.5" y="373.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -791,7 +802,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-jr-HRe" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="59" y="412" width="51" height="31"/>
+                                <rect key="frame" x="64" y="412" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -820,9 +831,9 @@
                             <constraint firstItem="6jp-Po-6FH" firstAttribute="trailing" secondItem="dSe-In-EM7" secondAttribute="trailing" id="AEm-zs-6Eg"/>
                             <constraint firstItem="MMU-Vp-olX" firstAttribute="centerY" secondItem="K7f-WR-Dmw" secondAttribute="centerY" id="DGy-QV-bu7"/>
                             <constraint firstItem="Svc-Uq-2Xg" firstAttribute="top" secondItem="ABZ-aG-07y" secondAttribute="bottom" constant="20" id="EFN-Cg-UIg"/>
-                            <constraint firstItem="evA-P4-5YX" firstAttribute="leading" secondItem="uGW-AH-xww" secondAttribute="trailing" constant="20" id="GNw-WH-4UA"/>
+                            <constraint firstItem="evA-P4-5YX" firstAttribute="leading" secondItem="uGW-AH-xww" secondAttribute="trailing" constant="25" id="GNw-WH-4UA"/>
                             <constraint firstItem="Pba-jr-HRe" firstAttribute="centerY" secondItem="lKB-z8-LeL" secondAttribute="centerY" id="KIa-EN-dXZ"/>
-                            <constraint firstItem="MMU-Vp-olX" firstAttribute="leading" secondItem="K7f-WR-Dmw" secondAttribute="trailing" constant="20" id="LKT-p4-u6u"/>
+                            <constraint firstItem="MMU-Vp-olX" firstAttribute="leading" secondItem="K7f-WR-Dmw" secondAttribute="trailing" constant="25" id="LKT-p4-u6u"/>
                             <constraint firstItem="3M9-k8-sc6" firstAttribute="leading" secondItem="GtG-Tz-0Nb" secondAttribute="leading" constant="20" id="Lfw-10-XN3"/>
                             <constraint firstItem="GZL-1i-Mit" firstAttribute="leading" secondItem="vet-eL-Vjl" secondAttribute="leading" id="M95-dT-NJe"/>
                             <constraint firstItem="uGW-AH-xww" firstAttribute="top" secondItem="ABZ-aG-07y" secondAttribute="bottom" constant="20" id="NW9-Vt-kYr"/>
@@ -844,14 +855,14 @@
                             <constraint firstItem="vet-eL-Vjl" firstAttribute="top" secondItem="fKG-HI-zhn" secondAttribute="bottom" constant="20" id="c9F-8n-Qi7"/>
                             <constraint firstItem="LZU-7U-ies" firstAttribute="centerY" secondItem="ulC-Bt-fMm" secondAttribute="centerY" id="e0M-5H-ZrQ"/>
                             <constraint firstItem="GZL-1i-Mit" firstAttribute="top" secondItem="vet-eL-Vjl" secondAttribute="bottom" constant="20" id="i3m-4y-aJh"/>
-                            <constraint firstItem="hxu-p4-vfy" firstAttribute="leading" secondItem="3M9-k8-sc6" secondAttribute="trailing" constant="20" id="ke7-mn-bJX"/>
+                            <constraint firstItem="hxu-p4-vfy" firstAttribute="leading" secondItem="3M9-k8-sc6" secondAttribute="trailing" constant="25" id="ke7-mn-bJX"/>
                             <constraint firstItem="vet-eL-Vjl" firstAttribute="width" secondItem="GtG-Tz-0Nb" secondAttribute="width" multiplier="1/2" id="q1x-PG-29C"/>
                             <constraint firstItem="vet-eL-Vjl" firstAttribute="leading" secondItem="GtG-Tz-0Nb" secondAttribute="leading" constant="20" id="qEd-tI-lih"/>
                             <constraint firstItem="uGW-AH-xww" firstAttribute="leading" secondItem="Svc-Uq-2Xg" secondAttribute="trailing" constant="10" id="u8M-aZ-yXx"/>
                             <constraint firstItem="ulC-Bt-fMm" firstAttribute="leading" secondItem="uGW-AH-xww" secondAttribute="leading" id="wg5-oF-Z3H"/>
-                            <constraint firstItem="LZU-7U-ies" firstAttribute="leading" secondItem="ulC-Bt-fMm" secondAttribute="trailing" constant="20" id="xT6-fz-oA0"/>
-                            <constraint firstItem="Pba-jr-HRe" firstAttribute="leading" secondItem="lKB-z8-LeL" secondAttribute="trailing" constant="20" id="yGK-Pd-zdv"/>
-                            <constraint firstAttribute="trailing" secondItem="dSe-In-EM7" secondAttribute="trailing" constant="15" id="zrl-01-WoO"/>
+                            <constraint firstItem="LZU-7U-ies" firstAttribute="leading" secondItem="ulC-Bt-fMm" secondAttribute="trailing" constant="25" id="xT6-fz-oA0"/>
+                            <constraint firstItem="Pba-jr-HRe" firstAttribute="leading" secondItem="lKB-z8-LeL" secondAttribute="trailing" constant="25" id="yGK-Pd-zdv"/>
+                            <constraint firstAttribute="trailing" secondItem="dSe-In-EM7" secondAttribute="trailing" constant="25" id="zrl-01-WoO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -952,7 +963,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n6B-cV-OTv" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="122.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="122.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -971,7 +982,7 @@
                             <constraint firstItem="URK-UJ-Feu" firstAttribute="top" secondItem="xUx-4L-ne9" secondAttribute="bottom" id="Pfo-Fu-L1N"/>
                             <constraint firstItem="2hC-Di-v1A" firstAttribute="width" secondItem="zeQ-uS-Ygy" secondAttribute="width" multiplier="3/5" id="TC5-12-b14"/>
                             <constraint firstItem="2hC-Di-v1A" firstAttribute="top" secondItem="xUx-4L-ne9" secondAttribute="bottom" constant="20" id="XYP-zU-GeN"/>
-                            <constraint firstAttribute="trailing" secondItem="n6B-cV-OTv" secondAttribute="trailing" constant="20" id="g2W-fO-Gat"/>
+                            <constraint firstAttribute="trailing" secondItem="n6B-cV-OTv" secondAttribute="trailing" constant="25" id="g2W-fO-Gat"/>
                             <constraint firstItem="n6B-cV-OTv" firstAttribute="centerY" secondItem="2hC-Di-v1A" secondAttribute="centerY" id="gia-sN-0jm"/>
                             <constraint firstItem="S42-S1-0V7" firstAttribute="top" secondItem="URK-UJ-Feu" secondAttribute="bottom" id="iRm-ce-dEF"/>
                             <constraint firstItem="URK-UJ-Feu" firstAttribute="leading" secondItem="zeQ-uS-Ygy" secondAttribute="leading" id="so2-ht-DgI"/>
@@ -1086,7 +1097,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1OO-nj-j25" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="96" width="51" height="31"/>
+                                <rect key="frame" x="246" y="96" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1098,7 +1109,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-hg-ybM" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="228" width="51" height="31"/>
+                                <rect key="frame" x="246" y="228" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1110,7 +1121,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-QT-r1T" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="292.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="292.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1136,7 +1147,7 @@
                             <constraint firstItem="WLp-P6-Eh0" firstAttribute="top" secondItem="5XJ-1A-qLv" secondAttribute="bottom" id="XMT-ye-UNw"/>
                             <constraint firstItem="cTc-mf-8Au" firstAttribute="leading" secondItem="5oz-8r-ZXg" secondAttribute="leading" constant="20" id="aIk-QU-h6n"/>
                             <constraint firstItem="PQN-hg-ybM" firstAttribute="trailing" secondItem="1OO-nj-j25" secondAttribute="trailing" id="cdt-zX-fht"/>
-                            <constraint firstAttribute="trailing" secondItem="1OO-nj-j25" secondAttribute="trailing" constant="20" id="e5L-ar-fGT"/>
+                            <constraint firstAttribute="trailing" secondItem="1OO-nj-j25" secondAttribute="trailing" constant="25" id="e5L-ar-fGT"/>
                             <constraint firstItem="3h0-2s-zzj" firstAttribute="width" secondItem="5rc-De-dmo" secondAttribute="width" id="exg-kM-EpB"/>
                             <constraint firstItem="P93-bW-JYd" firstAttribute="leading" secondItem="5oz-8r-ZXg" secondAttribute="leading" constant="20" id="kp8-uR-Geg"/>
                             <constraint firstAttribute="trailing" secondItem="WLp-P6-Eh0" secondAttribute="trailing" id="kwE-Ay-ZqU"/>
@@ -1254,7 +1265,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ypq-eH-BwA" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="179.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="179.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1266,7 +1277,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jSd-K1-uo9" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="218" width="51" height="31"/>
+                                <rect key="frame" x="246" y="218" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1278,7 +1289,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J58-CK-2W7" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="255.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="255.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1303,7 +1314,7 @@
                             <constraint firstItem="B8D-n4-mLc" firstAttribute="top" secondItem="5dn-Ch-kbE" secondAttribute="bottom" constant="20" id="gEf-RG-yif"/>
                             <constraint firstItem="jSd-K1-uo9" firstAttribute="trailing" secondItem="Ypq-eH-BwA" secondAttribute="trailing" id="mx5-F8-gUG"/>
                             <constraint firstItem="R70-sh-9Vk" firstAttribute="leading" secondItem="53g-ms-tvF" secondAttribute="leading" id="pMf-Vc-rwJ"/>
-                            <constraint firstAttribute="trailing" secondItem="Ypq-eH-BwA" secondAttribute="trailing" constant="40" id="qYa-6A-NeA"/>
+                            <constraint firstAttribute="trailing" secondItem="Ypq-eH-BwA" secondAttribute="trailing" constant="25" id="qYa-6A-NeA"/>
                             <constraint firstAttribute="trailing" secondItem="B8D-n4-mLc" secondAttribute="trailing" constant="20" id="t7f-xO-0hE"/>
                             <constraint firstItem="6D2-1A-w9u" firstAttribute="leading" secondItem="R70-sh-9Vk" secondAttribute="leading" id="wQo-sI-HAT"/>
                             <constraint firstItem="J58-CK-2W7" firstAttribute="trailing" secondItem="jSd-K1-uo9" secondAttribute="trailing" id="yzl-Jo-mVt"/>
@@ -1421,7 +1432,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xej-9x-QIy" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="161.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="161.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1433,7 +1444,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JK1-NZ-wK4" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="210" width="51" height="31"/>
+                                <rect key="frame" x="246" y="210" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1445,7 +1456,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8iN-X8-633" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="258" width="51" height="31"/>
+                                <rect key="frame" x="246" y="258" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1466,7 +1477,7 @@
                             <constraint firstItem="AAv-iU-glD" firstAttribute="leading" secondItem="cpX-Ad-h45" secondAttribute="leading" id="Nzv-m8-QUb"/>
                             <constraint firstItem="wVu-7d-pZt" firstAttribute="top" secondItem="598-oH-Q9h" secondAttribute="bottom" constant="30" id="PcS-gu-7YD"/>
                             <constraint firstItem="wVu-7d-pZt" firstAttribute="leading" secondItem="598-oH-Q9h" secondAttribute="leading" id="Tjg-Ld-5nh"/>
-                            <constraint firstAttribute="trailing" secondItem="Xej-9x-QIy" secondAttribute="trailing" constant="40" id="WFV-Bt-cNh"/>
+                            <constraint firstAttribute="trailing" secondItem="Xej-9x-QIy" secondAttribute="trailing" constant="25" id="WFV-Bt-cNh"/>
                             <constraint firstItem="598-oH-Q9h" firstAttribute="leading" secondItem="cpX-Ad-h45" secondAttribute="leading" constant="20" id="a2V-vR-6bM"/>
                             <constraint firstAttribute="trailing" secondItem="AAv-iU-glD" secondAttribute="trailing" id="aVh-Eg-7Sh"/>
                             <constraint firstItem="981-Fs-hGK" firstAttribute="top" secondItem="bcS-7y-bUw" secondAttribute="bottom" constant="20" id="cSp-Fs-rHm"/>
@@ -1600,7 +1611,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dtD-yH-gvd" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="144" width="51" height="31"/>
+                                <rect key="frame" x="246" y="144" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1612,7 +1623,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-Z7-3Nc" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="181.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="181.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1624,7 +1635,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Q1-9v-Ip3" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="219.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="219.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1636,7 +1647,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q9x-sO-oay" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="257.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="257.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1648,7 +1659,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CzK-Tp-WVT" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="231" y="295.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="295.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1679,7 +1690,7 @@
                             <constraint firstItem="DRO-Z7-3Nc" firstAttribute="trailing" secondItem="dtD-yH-gvd" secondAttribute="trailing" id="XUb-yZ-rHw"/>
                             <constraint firstItem="3Q1-9v-Ip3" firstAttribute="centerY" secondItem="f3h-E1-DDA" secondAttribute="centerY" id="aQg-zk-CdA"/>
                             <constraint firstItem="Q9x-sO-oay" firstAttribute="centerY" secondItem="3Es-7g-K85" secondAttribute="centerY" id="ce2-DS-IrM"/>
-                            <constraint firstAttribute="trailing" secondItem="dtD-yH-gvd" secondAttribute="trailing" constant="40" id="d4i-YQ-HFj"/>
+                            <constraint firstAttribute="trailing" secondItem="dtD-yH-gvd" secondAttribute="trailing" constant="25" id="d4i-YQ-HFj"/>
                             <constraint firstItem="INf-6r-ol2" firstAttribute="top" secondItem="3Es-7g-K85" secondAttribute="bottom" constant="20" id="gjd-jl-Z3q"/>
                             <constraint firstItem="Dw0-59-tR6" firstAttribute="top" secondItem="4wq-dE-zox" secondAttribute="bottom" id="koy-gX-D0G"/>
                             <constraint firstItem="3Es-7g-K85" firstAttribute="top" secondItem="f3h-E1-DDA" secondAttribute="bottom" constant="20" id="m8Q-il-I5q"/>
@@ -1787,7 +1798,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5RA-dn-i55" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="105" width="51" height="31"/>
+                                <rect key="frame" x="246" y="105" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1799,7 +1810,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zw5-17-616" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="207" width="51" height="31"/>
+                                <rect key="frame" x="246" y="207" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1826,7 +1837,7 @@
                             <constraint firstItem="u5y-oY-jcv" firstAttribute="leading" secondItem="JVc-7k-BWG" secondAttribute="leading" id="gRt-bx-9eV"/>
                             <constraint firstItem="Nvn-6y-p2m" firstAttribute="top" secondItem="Ctr-nH-2Xj" secondAttribute="bottom" id="hx7-5C-bh5"/>
                             <constraint firstItem="Ctr-nH-2Xj" firstAttribute="leading" secondItem="UeK-eP-odR" secondAttribute="leading" id="jcz-zh-D9L"/>
-                            <constraint firstAttribute="trailing" secondItem="5RA-dn-i55" secondAttribute="trailing" constant="20" id="np0-xN-YUb"/>
+                            <constraint firstAttribute="trailing" secondItem="5RA-dn-i55" secondAttribute="trailing" constant="25" id="np0-xN-YUb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1930,7 +1941,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nxx-L2-WlS" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="152.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="152.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1942,7 +1953,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IbL-JR-IoV" customClass="UISwitchCustom" customModule="TheDementiaTest" customModuleProvider="target">
-                                <rect key="frame" x="251" y="208.5" width="51" height="31"/>
+                                <rect key="frame" x="246" y="208.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.62352941179999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="OffTint">
@@ -1971,7 +1982,7 @@
                         <constraints>
                             <constraint firstItem="dQC-kr-gDl" firstAttribute="top" secondItem="r7z-5f-Bw7" secondAttribute="bottom" constant="30" id="3Cw-Af-088"/>
                             <constraint firstItem="dQC-kr-gDl" firstAttribute="width" secondItem="YUv-I4-dOj" secondAttribute="width" multiplier="3/5" id="7BL-TE-1k6"/>
-                            <constraint firstAttribute="trailing" secondItem="Nxx-L2-WlS" secondAttribute="trailing" constant="20" id="9J7-li-hEs"/>
+                            <constraint firstAttribute="trailing" secondItem="Nxx-L2-WlS" secondAttribute="trailing" constant="25" id="9J7-li-hEs"/>
                             <constraint firstItem="3AN-rI-zbd" firstAttribute="top" secondItem="dQC-kr-gDl" secondAttribute="bottom" constant="20" id="Bla-oA-bnL"/>
                             <constraint firstItem="WFC-pD-MHS" firstAttribute="centerX" secondItem="YUv-I4-dOj" secondAttribute="centerX" id="CjN-QT-Z1m"/>
                             <constraint firstItem="Nxx-L2-WlS" firstAttribute="centerY" secondItem="dQC-kr-gDl" secondAttribute="centerY" id="IUa-bV-URO"/>
@@ -1980,8 +1991,8 @@
                             <constraint firstItem="IbL-JR-IoV" firstAttribute="centerY" secondItem="3AN-rI-zbd" secondAttribute="centerY" id="OfU-2E-XVx"/>
                             <constraint firstItem="r7z-5f-Bw7" firstAttribute="leading" secondItem="YUv-I4-dOj" secondAttribute="leading" constant="20" id="XrK-SY-sKG"/>
                             <constraint firstItem="r7z-5f-Bw7" firstAttribute="top" secondItem="GAP-5n-uTQ" secondAttribute="bottom" constant="20" id="Zj9-Yn-3nD"/>
+                            <constraint firstItem="IbL-JR-IoV" firstAttribute="trailing" secondItem="Nxx-L2-WlS" secondAttribute="trailing" id="e8u-fg-lRh"/>
                             <constraint firstItem="eO4-0O-mbg" firstAttribute="top" secondItem="WFC-pD-MHS" secondAttribute="bottom" constant="20" id="fua-ZX-8EM"/>
-                            <constraint firstAttribute="trailing" secondItem="IbL-JR-IoV" secondAttribute="trailing" constant="20" id="pyo-9b-Zdc"/>
                             <constraint firstItem="3AN-rI-zbd" firstAttribute="width" secondItem="dQC-kr-gDl" secondAttribute="width" id="qIb-uE-w76"/>
                             <constraint firstItem="dQC-kr-gDl" firstAttribute="leading" secondItem="YUv-I4-dOj" secondAttribute="leading" constant="20" id="qXH-Aw-1Da"/>
                         </constraints>
@@ -2061,11 +2072,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrT-fr-SLX">
-                                        <rect key="frame" x="30" y="330" width="110" height="55"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="30" y="330" width="102" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="0WF-Fk-OZE"/>
-                                            <constraint firstAttribute="width" constant="110" id="OSL-QA-MDh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Save" backgroundImage="btn_save">
@@ -2076,8 +2085,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2y-Ko-Bvq">
-                                        <rect key="frame" x="140" y="331" width="110" height="54"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="148" y="330.5" width="102" height="55"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Share" backgroundImage="btn_save">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2087,18 +2095,19 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nd-1R-Wbk">
-                                        <rect key="frame" x="20" y="91" width="240" height="220"/>
-                                        <string key="text">Serious Cognitive Impairment of  Possible Organic origin, additional testing is strongly encouraged.  Person likely is experiencing a dementia like disorder or another neurological concern. please see a psychologist or your healthcare provider.</string>
+                                        <rect key="frame" x="20" y="81" width="240" height="239.5"/>
+                                        <string key="text">Serious Cognitive Impairment of  Possible Organic origin, additional testing is strongly encouraged.  Person likely is experiencing a dementia like disorder or another neurological concern.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="3nd-1R-Wbk" firstAttribute="top" secondItem="Zog-Sd-8cP" secondAttribute="bottom" constant="40" id="3V8-RS-s5c"/>
+                                    <constraint firstItem="3nd-1R-Wbk" firstAttribute="top" secondItem="Zog-Sd-8cP" secondAttribute="bottom" constant="30" id="3V8-RS-s5c"/>
                                     <constraint firstItem="3nd-1R-Wbk" firstAttribute="leading" secondItem="bqk-vq-d6s" secondAttribute="leading" constant="20" id="3zC-fW-EUn"/>
                                     <constraint firstItem="Zog-Sd-8cP" firstAttribute="leading" secondItem="ch2-hQ-Ife" secondAttribute="trailing" constant="10" id="7iZ-UN-a5W"/>
                                     <constraint firstItem="V0u-Rn-CLC" firstAttribute="leading" secondItem="bqk-vq-d6s" secondAttribute="leading" id="9e2-Rs-ExZ"/>
                                     <constraint firstAttribute="trailing" secondItem="3nd-1R-Wbk" secondAttribute="trailing" constant="20" id="C5r-OD-eVh"/>
+                                    <constraint firstItem="QrT-fr-SLX" firstAttribute="width" secondItem="bqk-vq-d6s" secondAttribute="width" multiplier="4/11" id="Fn0-Uc-7wg"/>
                                     <constraint firstItem="3nd-1R-Wbk" firstAttribute="centerX" secondItem="bqk-vq-d6s" secondAttribute="centerX" id="Fp2-8T-s81"/>
                                     <constraint firstAttribute="trailing" secondItem="k2y-Ko-Bvq" secondAttribute="trailing" constant="30" id="N0W-B2-u9b"/>
                                     <constraint firstAttribute="bottom" secondItem="V0u-Rn-CLC" secondAttribute="bottom" id="Rqi-4i-5vD"/>
@@ -2108,10 +2117,10 @@
                                     <constraint firstItem="ch2-hQ-Ife" firstAttribute="leading" secondItem="bqk-vq-d6s" secondAttribute="leading" constant="25" id="WlF-Fv-sF3"/>
                                     <constraint firstAttribute="bottom" secondItem="QrT-fr-SLX" secondAttribute="bottom" constant="30" id="ZbI-zN-8MF"/>
                                     <constraint firstItem="QrT-fr-SLX" firstAttribute="leading" secondItem="bqk-vq-d6s" secondAttribute="leading" constant="30" id="agW-ri-MVZ"/>
-                                    <constraint firstItem="k2y-Ko-Bvq" firstAttribute="top" secondItem="3nd-1R-Wbk" secondAttribute="bottom" constant="20" id="cPp-PH-KeN"/>
+                                    <constraint firstItem="k2y-Ko-Bvq" firstAttribute="bottom" secondItem="QrT-fr-SLX" secondAttribute="bottom" id="bpd-gp-tCA"/>
+                                    <constraint firstItem="k2y-Ko-Bvq" firstAttribute="top" secondItem="3nd-1R-Wbk" secondAttribute="bottom" constant="10" id="cPp-PH-KeN"/>
                                     <constraint firstAttribute="trailing" secondItem="V0u-Rn-CLC" secondAttribute="trailing" id="mJa-on-430"/>
                                     <constraint firstItem="ch2-hQ-Ife" firstAttribute="top" secondItem="bqk-vq-d6s" secondAttribute="top" constant="30" id="mle-uC-Oib"/>
-                                    <constraint firstAttribute="bottom" secondItem="k2y-Ko-Bvq" secondAttribute="bottom" constant="30" id="pWE-qQ-fOs"/>
                                     <constraint firstItem="k2y-Ko-Bvq" firstAttribute="width" secondItem="QrT-fr-SLX" secondAttribute="width" id="uUf-fj-I7T"/>
                                 </constraints>
                             </view>
@@ -2131,6 +2140,7 @@
                         <outlet property="backNavi" destination="UnU-zW-KPc" id="WI8-z1-a53"/>
                         <outlet property="lblTotalScore" destination="Zog-Sd-8cP" id="v2j-6U-diq"/>
                         <outlet property="tv_Status" destination="3nd-1R-Wbk" id="h6d-nC-1hB"/>
+                        <segue destination="KHw-P2-dou" kind="presentation" identifier="HomeSegue" id="gnt-oL-O07"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KL-Au-tKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2168,7 +2178,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="6408.75" y="1679.5774647887324"/>
+            <point key="canvasLocation" x="5139" y="948"/>
         </scene>
         <!--Author-->
         <scene sceneID="sAP-rJ-Rok">
@@ -2229,10 +2239,10 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_transfer" translatesAutoresizingMaskIntoConstraints="NO" id="yND-JV-TKn">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="425"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d8H-12-xGX">
-                                        <rect key="frame" x="15" y="20" width="260" height="390"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8H-12-xGX">
+                                        <rect key="frame" x="15" y="15" width="260" height="395"/>
                                         <string key="text">For ORIENTATION, ATTENTION, IMMEDIATE RECALL, LANGUAGE, FLUIDITY of SPEECH / RECALL,  CALCULATION, SHORT TERM MEMORY (Delayed Recall), Please Ask the questions, check the box for 1 point after each correct answer.  JUDGMENT: Please Ask the questions, check the box for 1 point after each correct answer.  Answers should demonstrate the appropriate action that would solve the problem.  For Example, to the question, “What would you do if you came home and the toilet had backed up and water was running into the house?” , The answer should be “Turn the water off and call a plumber” or “Call for help and turn the water off.”  Answers that do not demonstrate the need for help or that the water should be turned off, should not be counted.  For the question, “What would you do if you found yourself stranded in the Dallas Airport with only $1 in your pocket?”  The answer should be “Use the dollar to call for help.  Or ask for help from (some appropriate authority”  Answers that question why they are in Dallas or “this would never happen to me” etc., should not be scored.  Answers that are confused or incoherent should not be scored correct.  ABSTRACT REASONING: Please Ask the questions, check the box for 1 point after each correct answer.  1. A quarter and a nickel are both (Coins or Money)  A Watch and a Ruler are both (Measurement instruments or ways to measure time and distance).  Answers that are not abstract or simply define each term should not be scored correct.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -2242,7 +2252,7 @@
                                     <constraint firstAttribute="trailing" secondItem="d8H-12-xGX" secondAttribute="trailing" constant="15" id="H1k-iQ-cjh"/>
                                     <constraint firstItem="yND-JV-TKn" firstAttribute="top" secondItem="bV8-7x-xlL" secondAttribute="top" id="JA5-1q-gZT"/>
                                     <constraint firstItem="yND-JV-TKn" firstAttribute="leading" secondItem="bV8-7x-xlL" secondAttribute="leading" id="Sam-ML-g8R"/>
-                                    <constraint firstItem="d8H-12-xGX" firstAttribute="top" secondItem="bV8-7x-xlL" secondAttribute="top" constant="20" id="d1e-X2-qOm"/>
+                                    <constraint firstItem="d8H-12-xGX" firstAttribute="top" secondItem="bV8-7x-xlL" secondAttribute="top" constant="15" id="d1e-X2-qOm"/>
                                     <constraint firstAttribute="bottom" secondItem="d8H-12-xGX" secondAttribute="bottom" constant="15" id="dJX-ZQ-uZr"/>
                                     <constraint firstAttribute="bottom" secondItem="yND-JV-TKn" secondAttribute="bottom" id="miA-L4-aUY"/>
                                 </constraints>
@@ -2260,6 +2270,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v6i-26-r3j"/>
+                    <connections>
+                        <outlet property="textView" destination="d8H-12-xGX" id="2JU-Ly-VrO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9X-tf-OyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2300,6 +2313,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gdx-v5-iHD" id="4Ia-h5-V6M">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -2315,7 +2329,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqp-gC-ixb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3264.375" y="921.12676056338034"/>
+            <point key="canvasLocation" x="3062" y="921"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="jOR-6W-2cB">
@@ -2339,7 +2353,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="425"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Person Alert?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHw-Ri-LsZ">
-                                        <rect key="frame" x="20" y="20" width="108" height="18"/>
+                                        <rect key="frame" x="20" y="20" width="203" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="203" id="kzX-A1-Muf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2351,7 +2368,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of Education:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF8-uU-pnB">
-                                        <rect key="frame" x="20" y="86" width="130" height="18"/>
+                                        <rect key="frame" x="20" y="86" width="135" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="135" id="euy-TN-Ax8"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2387,49 +2407,49 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjE-ea-PLb">
-                                        <rect key="frame" x="161.5" y="20.5" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="20.5" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InA-vC-goP">
-                                        <rect key="frame" x="161.5" y="53" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="53" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WsH-hR-d1M">
-                                        <rect key="frame" x="161.5" y="86" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="86" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-Cb-xi0">
-                                        <rect key="frame" x="161.5" y="190" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="190" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-Pc-g04">
-                                        <rect key="frame" x="161.5" y="119" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="119" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqr-OD-xg1">
-                                        <rect key="frame" x="161.5" y="223" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="223" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="B1q-oK-oaN">
-                                        <rect key="frame" x="161.5" y="157.5" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="157.5" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLK-fO-UGg">
-                                        <rect key="frame" x="161.5" y="256" width="108.5" height="18"/>
+                                        <rect key="frame" x="165" y="256" width="105" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2444,8 +2464,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="abc" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-ST-iLh">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-ST-iLh">
                                         <rect key="frame" x="15" y="289" width="260" height="126"/>
+                                        <string key="text">Serious Cognitive Impairment of  Possible Organic origin, additional testing is strongly encouraged.  Person likely is experiencing a dementia like disorder or another neurological concern.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -2459,7 +2480,6 @@
                                     <constraint firstItem="tpV-BK-2yO" firstAttribute="top" secondItem="DMb-yg-3Gn" secondAttribute="bottom" constant="15" id="6Bc-V7-d2u"/>
                                     <constraint firstAttribute="trailing" secondItem="Zmq-ST-iLh" secondAttribute="trailing" constant="15" id="882-Ph-Zly"/>
                                     <constraint firstItem="s0z-GO-4rG" firstAttribute="leading" secondItem="HrH-CV-O9H" secondAttribute="leading" constant="15" id="E6k-mK-Now"/>
-                                    <constraint firstItem="YjE-ea-PLb" firstAttribute="width" secondItem="HrH-CV-O9H" secondAttribute="width" multiplier="15/40" id="FFV-wZ-4VA"/>
                                     <constraint firstItem="2SA-Qd-eay" firstAttribute="leading" secondItem="tpV-BK-2yO" secondAttribute="leading" id="HxP-tj-ZLg"/>
                                     <constraint firstAttribute="trailing" secondItem="s0z-GO-4rG" secondAttribute="trailing" constant="15" id="IkI-lJ-Oid"/>
                                     <constraint firstAttribute="bottom" secondItem="Zmq-ST-iLh" secondAttribute="bottom" constant="10" id="JKt-uP-tuc"/>
@@ -2499,6 +2519,7 @@
                                     <constraint firstItem="eqr-OD-xg1" firstAttribute="width" secondItem="FJZ-Cb-xi0" secondAttribute="width" id="st6-xJ-dA6"/>
                                     <constraint firstItem="FJZ-Cb-xi0" firstAttribute="centerY" secondItem="DMb-yg-3Gn" secondAttribute="centerY" id="taf-Ec-H4N"/>
                                     <constraint firstItem="BLK-fO-UGg" firstAttribute="trailing" secondItem="eqr-OD-xg1" secondAttribute="trailing" id="vSe-7M-hbc"/>
+                                    <constraint firstItem="WsH-hR-d1M" firstAttribute="leading" secondItem="zF8-uU-pnB" secondAttribute="trailing" constant="10" id="vVu-eH-M8m"/>
                                     <constraint firstItem="WsH-hR-d1M" firstAttribute="centerY" secondItem="zF8-uU-pnB" secondAttribute="centerY" id="xr2-Zh-Azi"/>
                                     <constraint firstItem="eqr-OD-xg1" firstAttribute="centerY" secondItem="tpV-BK-2yO" secondAttribute="centerY" id="yUv-PY-doN"/>
                                     <constraint firstItem="JYj-UG-3C6" firstAttribute="top" secondItem="zF8-uU-pnB" secondAttribute="bottom" constant="15" id="zG8-ad-xap"/>
@@ -2564,7 +2585,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="4275" y="921.12676056338034"/>
+            <point key="canvasLocation" x="3795" y="920"/>
         </scene>
         <!--LIST-->
         <scene sceneID="29Z-xy-Huy">

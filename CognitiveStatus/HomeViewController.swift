@@ -96,7 +96,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func setDateOfBirth(_ sender: UITextField) {
         
-        if standard.object(forKey: "birthday") == nil
+        if standard.object(forKey: "dateOfBirth") == nil
         {
             let date = Date()
             let format = DateFormatter()
@@ -106,9 +106,42 @@ class HomeViewController: UIViewController {
             
         else
         {
-            txt_DateOfBirth.text = standard.object(forKey: "birthday") as? String
+            txt_DateOfBirth.text = standard.object(forKey: "dateOfBirth") as? String
         }
         
+    }
+    @IBAction func EducationTF(_ sender: UITextField) {
+        if standard.object(forKey: "education") == nil
+        {
+            txt_Education.text = Education[0]
+        }
+        else
+        {
+            txt_Education.text = standard.object(forKey: "education") as? String
+        }
+    }
+    
+    @IBAction func EthnicityTF(_ sender: UITextField) {
+        
+        if standard.object(forKey: "ethinicity") == nil
+        {
+            txt_Ethnicity.text = Ethnicity[0]
+        }
+        else
+        {
+            txt_Ethnicity.text = standard.object(forKey: "ethinicity") as? String
+        }
+    }
+    @IBAction func WorkTF(_ sender: UITextField) {
+        if standard.object(forKey: "work") == nil
+        {
+            txt_Work.text = Work[0]
+        }
+        else
+        {
+            txt_Work.text = standard.object(forKey: "work") as? String
+        }
+
     }
     
     @IBAction func sw_Sex(_ sender: UISwitch) {
@@ -149,6 +182,11 @@ class HomeViewController: UIViewController {
         txt_Age.delegate = self
 //        txt_Ethnicity.delegate = self
 //        txt_Work.delegate = self
+        
+        txt_DateOfBirth.tintColor = UIColor.clear
+        txt_Ethnicity.tintColor = UIColor.clear
+        txt_Work.tintColor = UIColor.clear
+        
     }
     
     func configPickerView()
@@ -214,7 +252,6 @@ class HomeViewController: UIViewController {
     
     func DonePickerView()
     {
-        
         self.view.endEditing(true)
     }
     
