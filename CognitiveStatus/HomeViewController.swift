@@ -23,16 +23,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var lbl_Sex: UILabel!
     @IBOutlet var rightNavi: UIView!
     
-    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
-    
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!    
     
     
     let datePicker = UIDatePicker()
     let educationPickerView = UIPickerView()
     let ethnicityPickerView = UIPickerView()
-    let workPickerView = UIPickerView()
-    
-    
+    let workPickerView = UIPickerView()    
     
     let Education = ["Less than High School", "High School", "Some College and Technical", "College Degree","Profestional Degree"]
     let Ethnicity = ["Black","White","Hispanic","Asian/parafic Islander", "Native American","Other"]
@@ -44,6 +41,7 @@ class HomeViewController: UIViewController {
         
         self.navigationItem.title = "EXAMINATION"
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: self.rightNavi)
+//        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
         
         
         configPickerView()
@@ -81,6 +79,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func Next(_ sender: Any) {
+        
         if checkValidated()
         {
             saveUserData()
@@ -90,7 +89,7 @@ class HomeViewController: UIViewController {
         }
         else
         {
-            displayAlert(title: "Warning", mess: "Missing some infomation")
+            displayAlert(title: "Warning", mess: "All fileds are required !")
         }
     }
     
@@ -145,6 +144,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func sw_Sex(_ sender: UISwitch) {
+        
         if sender.isOn
         {
             lbl_Sex.text = "Male"
@@ -155,7 +155,6 @@ class HomeViewController: UIViewController {
         }
         
     }
-    
     
     func checkValidated() -> Bool
     {
@@ -180,12 +179,12 @@ class HomeViewController: UIViewController {
         txt_Ethnicity.adjustsFontSizeToFitWidth = true
         
         txt_Age.delegate = self
-//        txt_Ethnicity.delegate = self
-//        txt_Work.delegate = self
+//        txt_Name.delegate = self
         
         txt_DateOfBirth.tintColor = UIColor.clear
         txt_Ethnicity.tintColor = UIColor.clear
         txt_Work.tintColor = UIColor.clear
+        txt_Education.tintColor = UIColor.clear
         
     }
     
@@ -260,9 +259,10 @@ class HomeViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd, yyyy"
         txt_DateOfBirth.text = "\(formatter.string(from: datePicker.date))"
-        standard.set(txt_DateOfBirth.text, forKey: "birthday")
+        standard.set(txt_DateOfBirth.text, forKey: "dateOfBirth")
         
         //dismiss date picker dialog
+        
         self.view.endEditing(true)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -341,12 +341,12 @@ extension HomeViewController: UITextFieldDelegate
 {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
-        moveTextField(textField, moveDistance: -120, up: true)
+        moveTextField(textField, moveDistance: -100, up: true)
 
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        moveTextField(textField, moveDistance: -120, up: false)
+        moveTextField(textField, moveDistance: -100, up: false)
 
     }
     func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
@@ -358,6 +358,13 @@ extension HomeViewController: UITextFieldDelegate
         UIView.setAnimationDuration(moveDuration)
         self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
         UIView.commitAnimations()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        txt_Name.resignFirstResponder()
+        
+        return true
     }
 }
 

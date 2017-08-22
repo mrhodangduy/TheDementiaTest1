@@ -19,7 +19,6 @@ class DelayedRecallViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "DELAYED RECALL"
-
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: nextNavi)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)

@@ -26,6 +26,7 @@ class AbstractReasoningViewController: UIViewController {
     }
     
     @IBAction func SwitchActions(_ sender: UISwitchCustom) {
+        
         if sender.isOn
         {
             adstractResoningPoint += 1

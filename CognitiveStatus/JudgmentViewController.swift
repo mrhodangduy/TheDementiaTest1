@@ -19,8 +19,7 @@ class JudgmentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "JUDGMENT"
-        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
-
+//        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: nextNavi)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)

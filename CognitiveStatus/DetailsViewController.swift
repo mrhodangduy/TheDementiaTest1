@@ -23,24 +23,20 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var tv_Status: UITextView!
     
     
-    var userDetail = NSManagedObject()
     var score = 0
+    var name:String?
+    var dateOfBirth:String?
+    var levelOfEducation:String?
+    var ethnicity:String?
+    var age: Int?
+    var work:String?
+    var isPersonAlert:Bool?
+    var sex:Bool?
 
     override func viewDidLoad() {
         super.viewDidLoad()
                 
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)
-        
-        let name = userDetail.value(forKey: "name") as? String
-        let isPersonAlert = userDetail.value(forKey: "isPersonAlert") as? Bool
-        let dateOfBirth = userDetail.value(forKey: "dateOfBirth") as? String
-        let levelOfEducation = userDetail.value(forKey: "levelOfEducation") as? String
-        let sex = userDetail.value(forKey: "sex") as? Bool
-        let ethnicity = userDetail.value(forKey: "ethnicity") as? String
-        let age = userDetail.value(forKey: "age") as? Int
-        let work = userDetail.value(forKey: "work") as? String
-        score = (userDetail.value(forKey: "score") as? Int)!
-
         
         self.navigationItem.title = name!
         lblDateOfBirth.text = dateOfBirth!
@@ -101,21 +97,69 @@ class DetailsViewController: UIViewController {
         lblAge.adjustsFontSizeToFitWidth = true
         lblEthnicity.adjustsFontSizeToFitWidth = true
         lblEducation.adjustsFontSizeToFitWidth = true
-        lblDateOfBirth.adjustsFontSizeToFitWidth = true
-        
+        lblDateOfBirth.adjustsFontSizeToFitWidth = true        
     
     }
     
     @IBAction func Back(_ sender: UIButton) {
+        
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func ShareAction(_ sender: UIBarButtonItem) {
+        
+        let nameShare = "Name: \(name!)"
+        let date =      "Date of Birth: \(dateOfBirth!)"
+        let edu =       "Level of Education: \(levelOfEducation!)"
+        let ethnic =    "Ethnicity: \(ethnicity!)"
+        let ageShare =  "Age: \(age!)"
+        let workShare = "Work: \(work!)"
+        let scoreshare =     "Score: \(score)"
+        let result =    "Result: \(tv_Status.text!)"
+        let sexShare:String
+        let alert:String
+        
+        if sex!
+        {
+            sexShare =  "Sex: Male"
+        }
+        else
+        {
+            sexShare =  "Sex: Female"
+            
+        }
+        
+        if isPersonAlert!
+        {
+            alert  =    "Is Person Alert?: Yes"
+        }
+        else
+        {
+            alert  =    "Is Person Alert?: No"
+            
+        }
+        
+        let shareContent = [nameShare,alert,date,edu,sexShare,ethnic,ageShare,workShare,scoreshare,result]
+        
+        let controller = UIActivityViewController(activityItems: shareContent, applicationActivities: nil)
+        
+        // check device: phone or pad
+        
+        if UI_USER_INTERFACE_IDIOM() == .phone {
+            
+            present(controller, animated: true, completion: nil)
+            
+        }
+        else
+        {
+            controller.popoverPresentationController?.sourceView = self.view
+            controller.popoverPresentationController?.barButtonItem = sender
+            controller.popoverPresentationController?.permittedArrowDirections = .up
+            present(controller, animated: true, completion: nil)
+            
+        }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-    
-    
-
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630E4DD21F4C0E9B0004DEF3 /* LISTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E4DD11F4C0E9B0004DEF3 /* LISTTableViewCell.swift */; };
 		63DC5EE51F4AB904002EDB5F /* SaveCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DC5EE41F4AB904002EDB5F /* SaveCoreData.swift */; };
 		63DC5EE71F4AC8EC002EDB5F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DC5EE61F4AC8EC002EDB5F /* DetailsViewController.swift */; };
 		63DC5EE91F4AD37D002EDB5F /* Constrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DC5EE81F4AD37D002EDB5F /* Constrant.swift */; };
@@ -22,7 +23,6 @@
 		63FCA2361F452CC10069CC2B /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCA2351F452CC10069CC2B /* InstructionViewController.swift */; };
 		63FCA2381F452CCE0069CC2B /* LISTTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCA2371F452CCE0069CC2B /* LISTTableViewController.swift */; };
 		63FCA23B1F452D280069CC2B /* CustomnavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCA23A1F452D280069CC2B /* CustomnavigationBar.swift */; };
-		63FCA23E1F452DC00069CC2B /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCA23D1F452DC00069CC2B /* Extention.swift */; };
 		63FCA2401F4547DD0069CC2B /* OrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCA23F1F4547DD0069CC2B /* OrientationViewController.swift */; };
 		63FCA2421F454B470069CC2B /* AttentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCA2411F454B470069CC2B /* AttentionViewController.swift */; };
 		63FCA2441F4550CD0069CC2B /* IMMEDIATE RECALL   IMMEDIATE RECALL   ImmediateRecallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCA2431F4550CD0069CC2B /* IMMEDIATE RECALL   IMMEDIATE RECALL   ImmediateRecallViewController.swift */; };
@@ -38,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630E4DD11F4C0E9B0004DEF3 /* LISTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LISTTableViewCell.swift; sourceTree = "<group>"; };
 		63DC5EE41F4AB904002EDB5F /* SaveCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCoreData.swift; sourceTree = "<group>"; };
 		63DC5EE61F4AC8EC002EDB5F /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		63DC5EE81F4AD37D002EDB5F /* Constrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constrant.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		63FCA2351F452CC10069CC2B /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		63FCA2371F452CCE0069CC2B /* LISTTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LISTTableViewController.swift; sourceTree = "<group>"; };
 		63FCA23A1F452D280069CC2B /* CustomnavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomnavigationBar.swift; sourceTree = "<group>"; };
-		63FCA23D1F452DC00069CC2B /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		63FCA23F1F4547DD0069CC2B /* OrientationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationViewController.swift; sourceTree = "<group>"; };
 		63FCA2411F454B470069CC2B /* AttentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttentionViewController.swift; sourceTree = "<group>"; };
 		63FCA2431F4550CD0069CC2B /* IMMEDIATE RECALL   IMMEDIATE RECALL   ImmediateRecallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IMMEDIATE RECALL   IMMEDIATE RECALL   ImmediateRecallViewController.swift"; sourceTree = "<group>"; };
@@ -143,6 +143,7 @@
 			children = (
 				63FCA23A1F452D280069CC2B /* CustomnavigationBar.swift */,
 				63FCA2551F4584ED0069CC2B /* CustomTabbar.swift */,
+				630E4DD11F4C0E9B0004DEF3 /* LISTTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -150,7 +151,6 @@
 		63FCA23C1F452DB40069CC2B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				63FCA23D1F452DC00069CC2B /* Extention.swift */,
 				63FCA2531F4580070069CC2B /* RoundSwitch.swift */,
 				63DC5EE41F4AB904002EDB5F /* SaveCoreData.swift */,
 				63DC5EE81F4AD37D002EDB5F /* Constrant.swift */,
@@ -250,11 +250,11 @@
 				63FCA23B1F452D280069CC2B /* CustomnavigationBar.swift in Sources */,
 				63FCA2401F4547DD0069CC2B /* OrientationViewController.swift in Sources */,
 				63FCA2501F4553650069CC2B /* AbstractReasoningViewController.swift in Sources */,
+				630E4DD21F4C0E9B0004DEF3 /* LISTTableViewCell.swift in Sources */,
 				63FCA2381F452CCE0069CC2B /* LISTTableViewController.swift in Sources */,
 				63FCA24E1F45534C0069CC2B /* JudgmentViewController.swift in Sources */,
 				63FCA21C1F452A740069CC2B /* AppDelegate.swift in Sources */,
 				63FCA2461F4551020069CC2B /* LanguageViewController.swift in Sources */,
-				63FCA23E1F452DC00069CC2B /* Extention.swift in Sources */,
 				63FCA2321F452CA90069CC2B /* AuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +391,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Saunders (JMLPG4Z7UY)";
 				DEVELOPMENT_TEAM = ETFZ2326V8;
 				INFOPLIST_FILE = CognitiveStatus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wstevensaunders.exam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,7 +410,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Saunders (JMLPG4Z7UY)";
 				DEVELOPMENT_TEAM = ETFZ2326V8;
 				INFOPLIST_FILE = CognitiveStatus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wstevensaunders.exam;
 				PRODUCT_NAME = "$(TARGET_NAME)";

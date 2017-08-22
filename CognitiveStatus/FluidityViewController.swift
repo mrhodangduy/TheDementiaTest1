@@ -28,7 +28,7 @@ class FluidityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "FLUIDITY"
-        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
+//        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: nextnavi)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)        

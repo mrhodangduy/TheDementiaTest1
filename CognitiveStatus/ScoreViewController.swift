@@ -19,36 +19,15 @@ class ScoreViewController: UIViewController {
     
     var totalScore = 0
     
-    //define Status
-    
-    let lessthan15 = "Serious Cognitive Impairment of  Possible Organic origin, additional testing is strongly encouraged.  Person likely is experiencing a dementia like disorder or another neurological concern."
-    
-    let between1520 = "Moderate Cognitive Impairment, additional testing is strongly encouraged.  This person may have a dementia disorder or another neurological or psychological concern."
-    
-    let between2025 = "Person is diminished but functional, additional testing is likely warranted."
-    
-    let over26 = "No Impairment Noted, Person is within normal cognitive limits;  Additional testing may be of use to detect subtle deficits, if any."
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationItem.title = "SCORE"
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)
-        
+                navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)
         
         lblTotalScore.text = "\(totalScore)/30"
         setStatusForScore()
-        
-        print(UserDefaults.standard.object(forKey: "name")!)
-        print(UserDefaults.standard.object(forKey: "dateOfBirth")!)
-        print(UserDefaults.standard.object(forKey: "ethinicity")!)
-        print(UserDefaults.standard.object(forKey: "education")!)
-        print(UserDefaults.standard.object(forKey: "age")!)
-        print(UserDefaults.standard.object(forKey: "work")!)
-        print(UserDefaults.standard.object(forKey: "personAlert")!)
-        print(UserDefaults.standard.object(forKey: "sex")!)
-        print(totalScore)
         
         
     }
@@ -74,6 +53,7 @@ class ScoreViewController: UIViewController {
     }
 
     @IBAction func Back(_ sender: Any) {
+        
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -93,54 +73,90 @@ class ScoreViewController: UIViewController {
         standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         standard.synchronize()
         
-        performSegue(withIdentifier: "HomeSegue", sender: nil)
+//        let HomeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
+//        
+//        HomeVC.txt_Name.text = ""
+//        HomeVC.txt_Age.text = ""
+//        HomeVC.txt_DateOfBirth.text = ""
+//        HomeVC.txt_Work.text = ""
+//        HomeVC.txt_Ethnicity.text = ""
+//        HomeVC.txt_Education.text = ""
+//        HomeVC.sw_Sex.isOn = false
+//        HomeVC.sw_PersonAlert.isOn = false
+        
+        self.performSegue(withIdentifier: "gotoHome", sender: nil)
+        
+//        self.navigationController?.popToRootViewController(animated: true)
         
         
     }
     @IBAction func EmailData(_ sender: UIButton) {
         
-        UserDefaults.standard.removeObject(forKey: "birthday")
+        let name = standard.object(forKey: "name") as! String
+        let dateOfBirth = standard.object(forKey: "dateOfBirth") as! String
+        let personAlert = standard.object(forKey: "personAlert") as! Bool
+        let education = standard.object(forKey: "education") as! String
+        let ethinicity = standard.object(forKey: "ethinicity") as! String
+        let age = standard.object(forKey: "age") as! Int
+        let sex = standard.object(forKey: "sex") as! Bool
+        let work = standard.object(forKey: "work") as! String
         
-        let name = standard.object(forKey: "name") as? String
-        let dateOfBirth = standard.object(forKey: "dateOfBirth") as? String
-        let personAlert = standard.object(forKey: "personAlert") as? Bool
-        let education = standard.object(forKey: "education") as? String
-        let ethinicity = standard.object(forKey: "ethinicity") as? String
-        let age = standard.object(forKey: "age") as? Int
-        let sex = standard.object(forKey: "sex") as? Bool
-        let work = standard.object(forKey: "work") as? String
+        let nameShare = "Name: \(name)"
+        let date =      "Date of Birth: \(dateOfBirth)"
+        let edu =       "Level of Education: \(education)"
+        let ethnic =    "Ethnicity: \(ethinicity)"
+        let ageShare =  "Age: \(age)"
+        let workShare = "Work: \(work)"
+        let score =     "Score: \(totalScore)"
+        let result =    "Result: \(tv_Status.text!)"
+        let sexShare:String
+        let alert:String
         
-//        saveToCoreData(name: name!, isPersonAlert: personAlert!, dateOfBirth: dateOfBirth!, eduacation: education!, sex: sex!, ethnicity: ethinicity!, age: age!, work: work!, score: totalScore)
+        if sex
+        {
+            sexShare =  "Sex: Male"
+        }
+        else
+        {
+            sexShare =  "Sex: Female"
+
+        }
         
+        if personAlert
+        {
+            alert  =    "Is Person Alert?: Yes"
+        }
+        else
+        {
+            alert  =    "Is Person Alert?: No"
+
+        }
         
-//        if MFMailComposeViewController.canSendMail()
-//        {
-//            let mail = MFMailComposeViewController()
-//            mail.mailComposeDelegate = self
-//            mail.setSubject("Patient Score")
-//            mail.setMessageBody("", isHTML: false)
-//            
-//            present(mail, animated: true, completion: nil)
-//        }
-//        else
-//        {
-//            print("Could not open mail compose. Plese check your mail configure")
-//        }
+        let shareContent = [nameShare,alert,date,edu,sexShare,ethnic,ageShare,workShare,score,result]
         
-        let vc = UIActivityViewController(activityItems: [name!,work!,dateOfBirth!,personAlert!], applicationActivities: [])
-        present(vc, animated: true, completion: nil)
+        let controller = UIActivityViewController(activityItems: shareContent, applicationActivities: nil)
+        
+        // check device: phone or pad
+        
+        if UI_USER_INTERFACE_IDIOM() == .phone {
+            
+            present(controller, animated: true, completion: nil)
+            
+        }
+        else
+        {
+            controller.popoverPresentationController?.sourceView = sender
+            controller.popoverPresentationController?.sourceRect =  sender.bounds
+            controller.popoverPresentationController?.permittedArrowDirections = .down
+            present(controller, animated: true, completion: nil)
+
+        }
         
     }
     
     
 }
-//
-//extension ScoreViewController: MFMailComposeViewControllerDelegate
-//{
-//    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-//        self.dismiss(animated: true, completion: nil)
-//    }
-//}
+
 
 
 
