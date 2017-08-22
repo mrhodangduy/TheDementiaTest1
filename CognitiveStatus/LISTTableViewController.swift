@@ -112,4 +112,13 @@ class LISTTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete
+        {
+            deleteObject(listUsers[indexPath.row])
+            listUsers.remove(at: indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
+    
 }

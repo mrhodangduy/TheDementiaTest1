@@ -132,6 +132,7 @@ class HomeViewController: UIViewController {
         }
     }
     @IBAction func WorkTF(_ sender: UITextField) {
+        
         if standard.object(forKey: "work") == nil
         {
             txt_Work.text = Work[0]
@@ -322,15 +323,16 @@ extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource
         
         if dataSource == 0
         {
-            txt_Education.text = "\(Education[row])"
+            txt_Education.text = Education[row]
         }
         else if dataSource == 1
         {
-            txt_Ethnicity.text = "\(Ethnicity[row])"
+            txt_Ethnicity.text = Ethnicity[row]
         }
         else if dataSource == 2
         {
-            txt_Work.text = "\(Work[row])"
+            txt_Work.text = Work[row]
+            print(Work[row])
         }
         
     }

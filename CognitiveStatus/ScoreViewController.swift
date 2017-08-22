@@ -24,11 +24,10 @@ class ScoreViewController: UIViewController {
         
         self.navigationItem.title = "SCORE"
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg_main"))
-                navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)
         
         lblTotalScore.text = "\(totalScore)/30"
         setStatusForScore()
-        
         
     }
     
@@ -73,23 +72,10 @@ class ScoreViewController: UIViewController {
         standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         standard.synchronize()
         
-//        let HomeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
-//        
-//        HomeVC.txt_Name.text = ""
-//        HomeVC.txt_Age.text = ""
-//        HomeVC.txt_DateOfBirth.text = ""
-//        HomeVC.txt_Work.text = ""
-//        HomeVC.txt_Ethnicity.text = ""
-//        HomeVC.txt_Education.text = ""
-//        HomeVC.sw_Sex.isOn = false
-//        HomeVC.sw_PersonAlert.isOn = false
-        
         self.performSegue(withIdentifier: "gotoHome", sender: nil)
         
-//        self.navigationController?.popToRootViewController(animated: true)
-        
-        
     }
+    
     @IBAction func EmailData(_ sender: UIButton) {
         
         let name = standard.object(forKey: "name") as! String

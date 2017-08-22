@@ -1,5 +1,4 @@
-//
-//  SaveCoreData.swift
+///  SaveCoreData.swift
 //  TheDementiaTest
 //
 //  Created by QTS Coder on 8/21/17.
@@ -151,6 +150,41 @@ extension UITableViewController
         
         return users
         
+    }
+    
+    
+    func deleteObject(_ user: NSManagedObject)
+    {
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        if #available(iOS 10.0, *)
+        {
+            let contextManaged = appDel.persistentContainer.viewContext
+            contextManaged.delete(user)
+            do
+            {
+                try contextManaged.save()
+                print("save after dell sucessful")
+            }
+            catch
+            {
+                print(error.localizedDescription)
+            }
+        }
+        else
+        {
+            let contextManaged = appDel.managedObjectContext
+            contextManaged.delete(user)
+            do
+            {
+                try contextManaged.save()
+                print("save after dell sucessful")
+            }
+            catch
+            {
+                print(error.localizedDescription)
+            }
+
+        }
     }
 }
 

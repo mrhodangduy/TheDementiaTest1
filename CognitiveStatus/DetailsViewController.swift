@@ -12,6 +12,7 @@ import CoreData
 class DetailsViewController: UIViewController {
     
     @IBOutlet var backNavi: UIView!
+    @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblisPersonAlert: UILabel!
     @IBOutlet weak var lblDateOfBirth: UILabel!
     @IBOutlet weak var lblEducation: UILabel!
@@ -38,7 +39,7 @@ class DetailsViewController: UIViewController {
                 
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavi)
         
-        self.navigationItem.title = name!
+        lblName.text = name!
         lblDateOfBirth.text = dateOfBirth!
         lblEducation.text = levelOfEducation!
         lblEthnicity.text = ethnicity!
